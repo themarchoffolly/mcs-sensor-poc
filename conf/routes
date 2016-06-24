@@ -2,9 +2,10 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-# An example controller showing a sample home page
+# Index action generates MCS Sensor POC Home Page
 GET     /                           controllers.HomeController.index
-# An example controller showing how to use dependency injection
+
+# Plot action executes R MCS.Sensor::render function and returns plot data.
 GET     /plot                      controllers.HomeController.plot
 
 # Map static resources from the /public folder to the /assets URL path
